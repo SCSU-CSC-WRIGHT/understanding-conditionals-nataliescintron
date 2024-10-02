@@ -51,21 +51,28 @@ else:
     print('Your number is zero.')
 
 #Day of the Week -  hehe I used a list
-days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-user_input = int(input("Enter a number from 1-7: "))
+#List
+# days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-if user_input == 1:
-    print(days[0])
-elif user_input == 2:
-    print(days[1])
-elif user_input == 3:
-    print(days[2])
-elif user_input == 4:
-    print(days[3])
-elif user_input == 5:
-    print(days[4])
-elif user_input == 6:
-    print(days[5])
-else:
-    print(days[6])
+#Dictionary
+days = {0:"Sunday", 1:"Monday", 2:"Tuesday", 3:"Wednesday", 4:"Thursday", 5:"Friday", 6:"Saturday"}
+
+user_input = int(input("Enter a number from 0-6: "))
+print(days[user_input])
+
+#original List stuff I did
+# if user_input == 1:
+#     print(days[0])
+# elif user_input == 2:#
+#     print(days[1])
+# elif user_input == 3:
+#     print(days[2])
+# elif user_input == 4:
+#     print(days[3])
+# elif user_input == 5:
+#     print(days[4])
+# elif user_input == 6:
+#     print(days[5])
+# else:
+#     print(days[6])
